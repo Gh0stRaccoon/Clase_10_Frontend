@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<section class="promotions">
+				<p>Descuentos 20%</p>
+			</section>
+			<section class="header">
+				<h1>Heroes</h1>
+			</section>
+		</header>
+		<main class="form-main">
+			<form class="formulario" action="">
+				<legend>
+					<h1>Subí tu heroe</h1>
+					<p>Agregá tu personaje favorito completando las opciones.</p>
+				</legend>
+				<div class="flex">
+					<div class="form-section">
+						<div class="form-item">
+							<label for="name">Nombre</label>
+							<input type="text" name="name" />
+						</div>
+						<div class="form-item">
+							<label for="date">Fecha</label>
+							<input type="date" name="date" />
+						</div>
+						<div class="form-item">
+							<textarea cols="5" placeholder="Descripción"></textarea>
+						</div>
+					</div>
+					<div class="form-section">
+						<div class="form-item">
+							<label for="specie">* Especie</label>
+							<select name="specie">
+								<option value="especie" disabled selected>Especie</option>
+								<option value="unaEspecie">Una especie</option>
+								<option value="otraEspecie">Otra especie</option>
+							</select>
+						</div>
+						<div class="form-item">
+							<label for="file">Agregar foto</label>
+							<input type="file" name="file" />
+						</div>
+						<h2>Poderes</h2>
+						<div class="form-item">
+							<div class="form-item-option">
+								<input type="checkbox" name="powers" id="fly" value="Volar" />
+								<label for="fly">Volar</label>
+							</div>
+							<div class="form-item-option">
+								<input
+									type="checkbox"
+									name="powers"
+									id="superi"
+									value="Volar"
+								/>
+								<label for="superi">Superinteligencia</label>
+							</div>
+							<div class="form-item-option">
+								<input
+									type="checkbox"
+									name="powers"
+									id="laservision"
+									value="Volar"
+								/>
+								<label for="laservision">Vista de rayo láser</label>
+							</div>
+							<div class="form-item-option">
+								<input
+									type="checkbox"
+									name="powers"
+									id="bigwallet"
+									value="Volar"
+								/>
+								<label for="bigwallet">Billetera gorda</label>
+							</div>
+						</div>
+						<hr />
+						<div>
+							<h2>Tipo de personaje</h2>
+
+							<div class="form-item-option">
+								<input
+									type="radio"
+									name="pj-type"
+									id="heroeheroina"
+									value="hero"
+								/>
+								<label for="heroeheroina">Heroe / Heroína</label>
+							</div>
+							<div class="form-item-option">
+								<input
+									type="radio"
+									name="pj-type"
+									id="villanovillana"
+									value="Villian"
+								/>
+								<label for="villanovillana">Villano / Villana</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input type="submit" value="Añadir" />
+			</form>
+		</main>
+		<footer>
+			<p>Todos los derechos reservados a Front End 1</p>
+		</footer>
+	</body>
+</html>
